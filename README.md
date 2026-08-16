@@ -38,6 +38,10 @@ uv run python prepare_kitti_dataset.py --val-ratio 0.2 --seed 42
 
 The script extracts the archives, converts KITTI labels to YOLO format, and creates deterministic train and validation splits under data/kitti/. Update kitti.yaml only if you use a different output path.
 
+## Reproducible split
+
+The exact train and validation image IDs used for the local experiments are provided in splits/train.txt and splits/val.txt. The split configuration is recorded in splits/split_info.txt. No KITTI images, labels, or archives are included in this repository.
+
 ## Usage
 
 Train the default YOLO11m configuration:

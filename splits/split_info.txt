@@ -1,0 +1,13 @@
+﻿KITTI Split Metadata
+Generated: 2026-04-05 16:15:01
+Method: deterministic shuffle split from prepare_kitti_dataset.py
+Seed: 42
+Val ratio: 0.2
+Train count: 5985
+Val count: 1496
+Total count: 7481
+Train pct: 80
+Val pct: 20
+Files:
+- train.txt
+- val.txt
