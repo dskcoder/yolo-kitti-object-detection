@@ -30,7 +30,13 @@ cd yolo-kitti-object-detection
 uv sync
 ~~~
 
-Download and extract the KITTI object-detection dataset, then update kitti.yaml if your local dataset path differs from ./data/kitti.
+Place the official data_object_image_2.zip and data_object_label_2.zip archives in data/kitti_official/raw/, then run:
+
+~~~bash
+uv run python prepare_kitti_dataset.py --val-ratio 0.2 --seed 42
+~~~
+
+The script extracts the archives, converts KITTI labels to YOLO format, and creates deterministic train and validation splits under data/kitti/. Update kitti.yaml only if you use a different output path.
 
 ## Usage
 
@@ -68,6 +74,10 @@ Moderate-difficulty mean AP: YOLO11m 94.66%, YOLO26s 91.87%, and YOLO26n 85.24%.
 YOLO11m class-level AP: Car 99.11%, Pedestrian 89.70%, and Cyclist 95.18%.
 
 The evaluator uses IoU thresholds of 0.7 for cars and 0.5 for pedestrians and cyclists. These figures are intended for comparison within this project, not for an official KITTI benchmark submission.
+
+## Example detection
+
+![YOLO11m detections on a moderate-difficulty KITTI scene](docs/yolo11m_moderate_detection.jpg)
 
 ## References
 
