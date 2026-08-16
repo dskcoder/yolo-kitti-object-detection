@@ -1,0 +1,12 @@
+# Official KITTI Object Detection Dataset (local copy)
+# Update `path` if your extracted KITTI folder is in another location.
+path: ./data/kitti
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes (KITTI has 8 object types)
+nc: 8
+
+# Class names (KITTI standard classes)
+names: ['Car', 'Van', 'Truck', 'Pedestrian', 'Person_sitting', 'Cyclist', 'Tram', 'Misc']

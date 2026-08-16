@@ -1,0 +1,24 @@
+# Python environments and editor settings
+.venv/
+__pycache__/
+*.py[cod]
+.vscode/
+
+# Local KITTI datasets and derived training output
+data/
+datasets/
+runs/
+results/
+visualizations/
+
+# Downloaded and trained model weights
+*.pt
+*.onnx
+*.engine
+
+# Local configuration and logs
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
