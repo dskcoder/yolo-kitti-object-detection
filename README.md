@@ -328,7 +328,7 @@ uv run python evaluate_kitti.py \
 
 These metrics are from the project’s local KITTI-style evaluator and reflect the measured outputs from this repository. They are not official KITTI leaderboard scores.
 
-> Note: the local evaluator uses IoU thresholds of 0.7 for cars and 0.5 for pedestrians and cyclists. Results should be interpreted as project-local benchmark values rather than official benchmark submissions.
+> Results were measured with this project’s local KITTI-style evaluator, not the official KITTI leaderboard evaluation.
 
 ### Moderate-difficulty comparison
 
